@@ -1,0 +1,47 @@
+<!DOCTYPE HTML> 
+<html> 
+	
+	<body style = "text-align:center;"> 
+		
+		
+		
+		<p id = "GFG_UP" style = 
+			"font-size: 16px; font-weight: bold;" onclick = "myFun()">	Click Me! 
+		</p> 
+		
+		
+		
+		<p id = "GFG_DOWN" style = 
+			"color:green; font-size: 20px; font-weight: bold;"> 
+		</p> 
+		
+		<script> 
+			
+var allchar="0123456789ABCDEF";
+
+buton.addEventListener("click",myFun);
+
+function myFun(){
+  var  randcol= "";
+for(var i=0; i<6; i++){
+   randcol += allchar[Math.floor(Math.random()*16)];
+}
+document.body.style.backgroundColor= "#"+randcol;
+}
+        </script> 
+        
+        <center><h1>Image will resize on mouse over and out</h1></center>
+<img src="https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"   onmouseover="img_big(this)" onmouseout="img_small(this)">
+<script language="javascript">
+function img_small(x) {
+  x.style.height = "200px";
+  x.style.width = "200px";
+}
+
+function img_big(x) {
+  x.style.height = "600px";
+  x.style.width = "600px";
+}
+</script>
+	</body> 
+</html>					 
